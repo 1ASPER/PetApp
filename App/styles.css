@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Home */
+
+body {
+    background-color: rgb(19, 88, 41);
+}
+
+.main-title {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-family: Arial;
+    color: white;
+}
+
+.wrapper-home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home {
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column; /* Изменено на column */
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3e6e7b;
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #ff6b6b, #ffa500, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff) 1; /* Изменено направление градиента на "to bottom" */
+    border-radius: 10px; /* Добавлен радиус для закругления углов */
+}
+
+.page-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Изменено на column */
+    justify-content: space-evenly; /* Распределяет кнопки по вертикали равномерно */
+    align-items: center;
+}
+
+.page-nav a {
+    display: block;
+    padding: 10px 20px; /* Добавлен внутренний отступ для кнопок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: white; /* Цвет текста кнопок */
+    background-color: #007bff; /* Цвет фона кнопок */
+    border-radius: 5px; /* Немного закругляем углы кнопок */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.page-nav a:hover {
+    background-color: #0056b3; /* Цвет фона кнопок при наведении */
+}
