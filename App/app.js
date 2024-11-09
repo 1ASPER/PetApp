@@ -6,7 +6,7 @@ function check() {
 
     error_message.textContent = "";
 
-    if (name.trim() === "") {
+    if (!name) {    
         error_message.textContent = "Error: empty name";
         return false;
     }
@@ -20,7 +20,9 @@ function check() {
         return false;
     }
 
-    error_message.textContent = "OK!";
-    alert("Success!");
+    error_message.textContent = "Success :)";
+    error_message.style = "color: green;"
+
+    alert("Success registation!");
     return true;
 }
