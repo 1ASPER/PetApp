@@ -1,3 +1,4 @@
+// TASK 1
 function check() {
     const name = document.getElementById('get-name').value;
     const email = document.getElementById('get-email').value;
@@ -30,7 +31,7 @@ function check() {
     return true;
 }
 
-
+// TASK 2
 function calculate() { 
     const num1 = parseFloat(document.getElementById("form-calc__num1").value);
     const num2 = parseFloat(document.getElementById("form-calc__num2").value);
@@ -54,3 +55,36 @@ function calculate() {
     answer.textContent = `${num1} ${operation} ${num2} = ${answers[operation]}`;
     return false;
 }
+
+// TASK 3
+const gallery = document.getElementById("gallery");
+const fullViewContainer = document.getElementById("fullViewContainer");
+const fullViewCloseButton = document.getElementById("fullViewCloseButton");
+const fullViewImage = document.getElementById("fullViewImage");
+
+const images = [
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg"
+]
+
+images.forEach((imgSrc) => {
+    const imageElement = document.createElement("img");
+    imageElement.src = imgSrc;
+    imageElement.className = "gallery__image";
+
+    imageElement.addEventListener("click", () => {
+        fullViewImage.src = imgSrc;
+        fullViewContainer.style.display = "flex";
+    });
+
+    gallery.appendChild(imageElement);
+});
+
+fullViewCloseButton.addEventListener("click", () => {
+    fullViewContainer.style.display = "none";
+});
+
