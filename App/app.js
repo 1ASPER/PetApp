@@ -10,12 +10,15 @@ function check() {
         error_message.textContent = "Error: empty name";
         return false;
     }
-    if (!email.includes("@") || !email.includes(".")) {
-        error_message.textContent = "Error: incorrect email";
+    if (!email.includes("@")) {
+        error_message.textContent = "Error: incorrect email ('@' is absent)";
         return false;
     }
-
-    if (password.length < 8) {
+    if (!email.includes(".")) {
+        error_message.textContent = "Error: incorrect email ('.' is absent)";
+        return false;
+    }
+    if (password.length < 8) {  
         error_message.textContent = "Error: password length is less than 8 symbols";
         return false;
     }
@@ -25,4 +28,29 @@ function check() {
 
     alert("Success registation!");
     return true;
+}
+
+
+function calculate() { 
+    const num1 = parseFloat(document.getElementById("form-calc__num1").value);
+    const num2 = parseFloat(document.getElementById("form-calc__num2").value);
+    const operation = document.getElementById("form-calc__operation").value;
+
+    const answer = document.getElementById("answer");
+
+    if (isNaN(num1) || isNaN(num2)) {
+        // alert('Error: Empty or invalid input');
+        answer.textContent = "Error: Empty or invalid input";
+        return false;
+    }
+
+    let answers = {
+        "+": num1 + num2,
+        "-": num1 - num2,
+        "*": num1 * num2,
+        "/": num2 !== 0 ? num1 / num2 : "INF (division by 0)"
+    };
+
+    answer.textContent = `${num1} ${operation} ${num2} = ${answers[operation]}`;
+    return false;
 }

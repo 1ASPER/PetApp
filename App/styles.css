@@ -3,10 +3,8 @@
     padding: 0;
 }
 
-body {
-    background-color: rgb(28, 19, 95);
-    background-image: url("/images/background.jpg");
-    background-size: cover;
+body {  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,22,201,0.9500175070028011) 41%, rgba(0,212,255,1) 100%);
 }
 
 /* Home page */
@@ -40,7 +38,7 @@ body {
 
 .container-home {
     width: 17%;
-    height: 24vh;
+    height: 38vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,3 +148,67 @@ form#registration button:hover {
     margin-top: 10px;
 }
 
+
+/* Task 2 */
+
+#form-calc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    padding: 20px;
+}
+
+#form-calc__num1, #form-calc__num2 {
+    padding: 8px;
+    border: 2px solid #647b17;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s ease;
+}
+
+#form-calc__num1:focus, #form-calc__num2:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+#form-calc__operation {
+    padding: 8px;
+    border: 2px solid #647b17;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#form-calc__button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#form-calc__button:hover {
+    transform: scale(1.05);
+}
+
+#form-calc__button:active {
+    transform: scale(0.95);
+}
+
+#answer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
