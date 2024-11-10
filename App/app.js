@@ -63,12 +63,12 @@ const fullViewCloseButton = document.getElementById("fullViewCloseButton");
 const fullViewImage = document.getElementById("fullViewImage");
 
 const images = [
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg",
-    "https://static.vecteezy.com/system/resources/thumbnails/022/385/025/small_2x/a-cute-surprised-black-haired-anime-girl-under-the-blooming-sakura-ai-generated-photo.jpg"
+    "https://videogames.si.com/.image/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/MjAxMDQ1NTUyNjk0MDQ0MDQ5/genshin-impact-furina-card-1.png",
+    "https://s1.zerochan.net/Lumine.600.3126229.jpg",
+    "https://r2.erweima.ai/imgcompressed/compressed_96ebffb913e56fb3d24d75004d0ee08a.webp",
+    "https://quickbutik.imgix.net/16840p/products/60f005a527786.jpeg",
+    "https://videogames.si.com/.image/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/MTk1Mjk1MDkxNTgwMDIwMDI2/genshin-impact-ayaka-card-1.png",
+    "https://i.etsystatic.com/21165787/r/il/8c8cb1/4243413814/il_570xN.4243413814_pxef.jpg"
 ]
 
 images.forEach((imgSrc) => {
